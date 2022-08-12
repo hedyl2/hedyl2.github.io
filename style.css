@@ -20,3 +20,10 @@ p.descriptor {
 	font-family: Verdana
 	font-size: 5px;
 }
+
+.misc {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
