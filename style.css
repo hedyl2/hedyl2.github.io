@@ -2,9 +2,6 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
-body {
-  background-color: light-blue;
-}
 
 .button	{
 	width: 150;
@@ -20,8 +17,14 @@ p.descriptor {
 }
 
 .misc {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150;
+	height: 150;
+}
+
+body {
+background: rgb(52,194,173);
+background: linear-gradient(90deg, rgba(52,194,173,1) 0%, rgba(100,217,219,1) 38%, rgba(0,212,255,1) 71%);
 }
