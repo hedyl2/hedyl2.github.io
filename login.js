@@ -25,6 +25,6 @@ function creds(){
     document.getElementById("loginStatus").innerHTML = "Badge number is invalid";
   } else {
     alert("Login Successful. Welcome, " + fullName)
-    location.replace("./index.html")
+    location.replace("./optimizedsite.html")
   }
 }
