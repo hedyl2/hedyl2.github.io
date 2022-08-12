@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<script src="code.js"></script>
+		<!-- <script src="classCode.js"></script> -->
+		<script src="dataLoader.js"></script>
+		<script src="launchdatadisplay.js"></script>
+	<title> Zevin's UAT Space Program </title>
+	<link href="/style.css" rel="stylesheet" type="text/css" media="all">
+
+	<script>
+		var theTime = new Date();
+		var time_interval = 5000;
+		var last_interation = 0;
+		var running = true;
+		var index = 0;
+		var timer;
+		var data = getData();
+	</script>
+	
+  </head>
+  <body>
+
+    <table>
+      <td><img src="images/buffbug.gif"></td>
+      <td><h1>UAT Space Program</h1></td>
+    </table>
+	<br>
+    <table id="data" width="40%" border="2">
+      <thead>
+		<th> Data Type</th>
+		<th> Reading</th>
+	  </thead>
+	   <tbody>
+		 <tr id="seconds"></tr>
+	     <tr id="latitude"></tr>
+		 <tr id="longitude"></tr>
+		 <tr id="gpsAltitude"></tr>
+		 <tr id="bmpSensorA"></tr>
+		 <tr id="bmpSensorP"></tr>
+		 <tr id="bmpSensorT"></tr>
+		 <tr id="digSensorT"></tr>
+		 <tr id="cssSensorT"></tr>
+		 <tr id="cssSensorECO2"></tr>
+		 <tr id="cssSensorTVOC"></tr>
+		 <tr id="UV"></tr>
+		 <tr id="accelX"></tr>
+		 <tr id="accely"></tr>
+		 <tr id="accelz"></tr>
+		 <tr id="magx"></tr>
+		 <tr id="magy"></tr>
+		 <tr id="magz"></tr>
+		 <tr id="gyrx"></tr>
+		 <tr id="gyry"></tr>
+		 <tr id="gyrz"></tr>
+	   </tbody>
+    </table>
+    <br>
+	<br>
+	The current time is: <div id="timeDisplay">Press start for time</div>
+	<br>
+	<br>
+    <button onclick="start();" id="startButton" class="button">Start</button>
+    <button onclick="stop();" id="stopButton" class="button">Stop</button>
+    <br><br><br>
+	
+	<p class="descriptor">This is the file hoot6.wav, one audio clip among many that is present in the pre-release demo of Half-Life 1.</p>
+	
+	<button onclick="playStation();">hoot6.wav</button>
+
+  </body>
+</html>
