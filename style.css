@@ -3,7 +3,7 @@
    "how to change link color." */
 
 body {
-  background-image: linear-gradient(blue, yellow);
+  background-color: light-blue;
 }
 
 .button	{
